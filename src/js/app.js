@@ -1,10 +1,10 @@
-// import{library,dom} from '@fortawesome/fontawesome-svg-core';
-// import {faSpinner } from '@fortawesome/free-solid-svg-icons';
+import{library,dom} from '@fortawesome/fontawesome-svg-core';
+ import {faSpinner } from '@fortawesome/free-solid-svg-icons';
 import "bootstrap";
 import 'owl.carousel';
 
-// library.add(faSpinner);
-// dom.watch();
+library.add(faSpinner);
+dom.watch();
 
 window.$ = window.jQuery = require('jquery')
 window.Popper = require('popper.js')

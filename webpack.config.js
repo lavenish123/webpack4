@@ -1,6 +1,7 @@
 const path = require('path');
 var webpack = require('webpack');
 const { CleanWebpackPlugin} = require('clean-webpack-plugin');
+
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -9,6 +10,11 @@ var isProd = process.env.NODE_ENV === 'production' //true or false
 var ProdImagesPath = 'file-loader?name=[name].[ext]&outputPath=../assets/images/&publicPath=assets/images/'
 var DevImagesPath = 'file-loader?name=[name].[ext]&outputPath=images/&publicPath=images/';
 /* End images Path */
+
+
+var CleanProd = ['**/*', path.join(process.cwd(), 'index.html*')];
+
+
 
 module.exports = {
   entry: './src/js/app.js',    /*Entry File Name*/
@@ -79,11 +85,13 @@ module.exports = {
   plugins: [
 
     new MiniCssExtractPlugin({   /*Make cssfile style.css in assets folder*/
-      filename: 'css/style.[contenthash].css',
+      filename: '../style.[contenthash].css',
+      allChunks: true
     }),
     
+
     new CleanWebpackPlugin({ 
-    cleanOnceBeforeBuildPatterns: ['**/*', path.join(process.cwd(), 'index.html*'),], 
+    cleanOnceBeforeBuildPatterns:isProd ? CleanProd : [], 
      /*clean any[foldername is = staticFiles] folder*/  }),  /*clean assets folder*/
      new HtmlWebpackPlugin({
       title: 'Home Page',
