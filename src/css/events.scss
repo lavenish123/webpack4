@@ -1,0 +1,210 @@
+.events {
+
+    position: relative;
+
+
+    .owl-theme .owl-nav [class*='owl-']:hover {
+        background: #86d2d9;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .owl-theme .owl-nav [class*='owl-']:hover i {
+
+        color: #FFF;
+        text-decoration: none;
+    }
+
+
+
+
+
+    .owlcont {
+        opacity: 0;
+    }
+
+    .imgicon {
+        opacity: 0;
+    }
+
+    .bottomcont {
+        opacity: 0;
+    }
+
+
+   
+
+
+
+
+    .owl-nav i {
+        font-size: 28px;
+        color: #999;
+    }
+
+    .owl-carousel .owl-nav {
+        position: relative;
+        top: inherit;
+        width: 100%;
+        margin-top: 0px;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
+    .owlrel {
+        position: relative;
+    }
+
+    .mapicon {
+        width: 30px;
+        position: absolute;
+        left: 50%;
+        bottom: 95px;
+        margin-left: -15px;
+    }
+
+    .owl-carousel .owl-nav:after {
+        content: "";
+        width: 100%;
+        display: block;
+        height: 1px;
+        background: #ddd;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 24px;
+    }
+
+    .owl-carousel .owl-nav button {
+        position: relative;
+        z-index: 999;
+        margin-left: 200px;
+        margin-right: 200px;
+        background: #fff;
+        border: 1px solid #86d2d9;
+
+
+
+
+    }
+
+
+    @media only screen and (max-width:992px) {
+        .owlcont {
+            opacity: 1;
+        }
+
+        .imgicon {
+            opacity: 1;
+        }
+
+        .bottomcont {
+            opacity: 1;
+        }
+
+
+
+        .owl-carousel .owl-nav button {
+
+            margin-left: 100px;
+            margin-right: 100px;
+
+        }
+
+
+
+
+
+    }
+
+
+
+
+
+    @media only screen and (max-width: 767px) {
+        .owl-carousel .owl-nav button {
+        margin-left: 40px;
+        margin-right: 40px;
+
+        }
+    }
+
+
+
+
+
+
+    .owlset {
+
+        &:hover {
+
+
+            .owlcont {
+                opacity: 1;
+            }
+
+            .imgicon {
+                opacity: 1;
+            }
+
+            .bottomcont {
+                opacity: 1;
+            }
+        }
+    }
+
+
+    .owlimg .owlcont {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.5);
+        left: 50%;
+        color: #fff;
+        text-align: center;
+        padding-top: 25%;
+    }
+
+
+    .owl-item .imgicon img {
+        width: 50px;
+    }
+
+
+
+    .imgicon {
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        bottom: -20px;
+    }
+
+
+    .owlimg {
+        position: relative;
+    }
+
+    .owlimg .owlcont p {
+        font-weight: 300;
+    }
+
+    .owlimg .owlcont h5 {
+        font-weight: 400;
+    }
+
+    .bottomcont {
+        font-size: 22px;
+        text-align: center;
+        padding: 40px 20px;
+        color: #000;
+    }
+
+
+
+
+
+
+
+}

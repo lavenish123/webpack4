@@ -1,0 +1,229 @@
+.upcomingevents {
+
+
+
+    @media only screen and (max-width: 767px) {
+        background: #f8f8f8;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        margin-bottom: 40px;
+        border: 1px solid #eee;
+    }
+
+
+
+    .nav-tabs {
+        border: 0;
+        justify-content: center;
+
+        li {
+            margin-left: 3px;
+            margin-right: 3px;
+
+
+           
+
+
+
+
+            a {
+                background: #fff;
+                display: block;
+                padding: 10px 24px;
+                border-radius: 50px;
+                color: #000;
+
+                &:hover {
+                    text-decoration: none;
+                    color: #00828e;
+                }
+
+
+                &.active {
+                    background: #87d2d9;
+                    color: #fff;
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+
+                margin: 8px;
+
+                a {
+                   
+                    padding: 9px 12px;
+    border-radius: 5px;
+    background: #eee;
+
+
+            }
+
+        }
+
+
+
+
+
+
+
+        }
+
+
+
+
+    }
+
+
+    .tab-content {
+        padding-top: 45px;
+    }
+
+
+
+
+    .card {
+        margin-bottom: 35px;
+
+        &:hover {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+        }
+
+        .card-title {
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            padding-top: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .card-body {
+            font-size: 14px;
+            color: #333;
+            font-weight: 400;
+        }
+
+        .card-img {
+            position: relative;
+        }
+
+        .card-rating span {
+            display: inline-block;
+            padding-right: 3px;
+        }
+
+
+        img.vichle-icon {
+            margin: 4px 10px;
+        }
+
+
+        .card-rating span+span {
+            padding-left: 3px;
+        }
+
+        .card-price {
+            padding-top: 10px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        .card-rating span:first-child {
+            color: #e4b300;
+            font-weight: 500;
+        }
+        .card-price.singlecont {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .imgdate {
+            position: absolute;
+            top: 20px;
+            left: -6px;
+            background: #fff;
+            padding: 7px 10px 5px;
+            border-radius: 2px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+            font-size: 14px;
+
+            &.specialreban{
+                background: url('./../images/special.png');
+                color: #fff;
+                box-shadow: none;
+                width: 100px;
+                text-transform: uppercase;
+            }
+        }
+
+
+
+        .card-price span {
+            display: block;
+            font-weight: 400;
+        }
+
+
+
+
+
+        .img-icon-download {
+            right: 17px;
+        }
+
+        .img-icon-heart {
+            right: 70px;
+        }
+
+        .round-icon {
+            border-radius: 50px;
+            background: #fff;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            text-align: center;
+            line-height: 40px;
+            bottom: -18px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card-date {
+            padding: 8px 0;
+        }
+
+        .card-footer {
+            margin: 0;
+            padding: 6px 0;
+            border-top: 1px solid rgba(183, 183, 183, 0.5);
+            background: #fff;
+
+
+            a.btn.btn-link {
+                color: #000;
+                font-size: 16px;
+                font-weight: 500;
+                &.tstatus {
+                    color: #4a7b80;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    color: #00828e;
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+}

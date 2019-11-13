@@ -13,6 +13,3 @@ $('#myModalvideo').on('hidden.bs.modal', function(e) {
 });
 
 
-$(document).ready(function(){
-    $('.owl-carousel').owlCarousel();
-  });

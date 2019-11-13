@@ -1,0 +1,29 @@
+.seeall a {
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-weight: 500;
+    background: #fff;
+
+
+
+     i {
+        display: inline-block;
+        padding-right: 10px;
+        color: #86d2d9;
+        font-size: 21px;
+        vertical-align: middle;
+        padding-bottom: 2px;
+    }
+}
+
+
+.seeall a:hover {
+    background: #86d2d9;
+    color: #fff;
+    border-color: #85d2d9;
+}
+
+.seeall a:hover i {
+    color: #fff;
+}

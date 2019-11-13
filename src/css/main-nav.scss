@@ -1,0 +1,39 @@
+.mainnav .navbar-nav .nav-link {
+    color: #111;
+    &:hover {
+        color: #0a818c;
+    }
+}
+
+.mainnav li.nav-item {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+
+.mainnav .navbar-nav .nav-link i {
+    display: inline-block;
+    padding-right: 2px;
+
+}
+
+header.siteheader {
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+.mainnav li.nav-item {
+    border: 1px solid #fff;
+    margin-left: 0;
+    padding: 0 15px;
+    background: #f8f8f8;
+}
+
+}
