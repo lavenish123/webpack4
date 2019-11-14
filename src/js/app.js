@@ -1,9 +1,16 @@
 import{library,dom} from '@fortawesome/fontawesome-svg-core';
- import {faSpinner } from '@fortawesome/free-solid-svg-icons';
+import {faSpinner, faAllergies} from '@fortawesome/free-solid-svg-icons';
+
+
+
+
+
 import "bootstrap";
 import 'owl.carousel';
 
-library.add(faSpinner);
+library.add(faSpinner, faAllergies);
+
+
 dom.watch();
 
 window.$ = window.jQuery = require('jquery')

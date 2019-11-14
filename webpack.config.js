@@ -67,7 +67,8 @@ module.exports = {
           'css-loader',
           // Compiles Sass to CSS
           'sass-loader',
-        ],
+        ]
+    
       },
       {
         test: /\.m?js$/,
@@ -85,7 +86,7 @@ module.exports = {
   plugins: [
 
     new MiniCssExtractPlugin({   /*Make cssfile style.css in assets folder*/
-      filename: '../style.[contenthash].css',
+      filename: '../style.css?v=[contenthash]',
       allChunks: true
     }),
     

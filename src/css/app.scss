@@ -18,8 +18,11 @@ $owl-image-path: "~owl.carousel/src/img/";
 @import './events';
 @import './category';
 
-body{ font-family: 'Rubik', sans-serif;}
+body{ font-family: 'Rubik', sans-serif; }
 .tab-content > .active { opacity: 1; }
+
+
+
 
 
 a, a:active, a:focus, a:hover, a:visited, button, button:focus {
