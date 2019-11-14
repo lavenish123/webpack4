@@ -3,6 +3,13 @@ $owl-image-path: "~owl.carousel/src/img/";
 @import '~owl.carousel/src/scss/owl.carousel';
 @import '~owl.carousel/src/scss/owl.theme.default';
 
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+
 @import 'owl.theme';
 @import 'owl.setting';
 
@@ -174,3 +181,26 @@ section.topsearch button.btn.btn-secondary {
 
 }
 
+
+
+
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .login::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f007";
+  }
+
+  .tps::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f1ea";
+  }
+
+  .twitter::before {
+    font-family: "Font Awesome 5 Brands"; content: "\f099";
+  }

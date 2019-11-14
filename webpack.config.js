@@ -12,6 +12,14 @@ var DevImagesPath = 'file-loader?name=[name].[ext]&outputPath=images/&publicPath
 /* End images Path */
 
 
+
+
+
+
+
+
+
+
 var CleanProd = ['**/*', path.join(process.cwd(), 'index.html*')];
 
 
@@ -40,12 +48,14 @@ module.exports = {
             ]
         },
       {
-          test: /\.(ttf|svg|eot)$/i,
+          test: /\.(ttf|svg|eot|woff|woff2)$/i,
+         // test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
           use: [{
               loader: 'file-loader',
               options: {
                 name: '[name].[ext]',
-                outputPath: 'fonts/',
+                outputPath: './fonts/',
+                publicPath:isProd ? './assets/fonts/' : '',
               },
           }, ],
       },
@@ -84,7 +94,6 @@ module.exports = {
     ],
   },
   plugins: [
-
     new MiniCssExtractPlugin({   /*Make cssfile style.css in assets folder*/
       filename: '../style.css?v=[contenthash]',
       allChunks: true
